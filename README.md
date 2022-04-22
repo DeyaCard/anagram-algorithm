@@ -8,8 +8,8 @@ A Ruby testing environment for anagram algorithms.
 
 * Ruby
 * Gems
-* 
-* 
+* RSPEC
+* Pry
 * 
 
 
