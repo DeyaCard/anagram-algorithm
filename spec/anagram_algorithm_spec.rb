@@ -12,6 +12,11 @@ describe ("Anagram_algorithm") do
       input = Anagram_algorithm.new("bug", "toy")
       expect(input.anagrams?()).to(eq(false))
     end
+
+    it('should check if two sentences are anagrams') do
+      input = Anagram_algorithm.new("The Morse Code", "Here come dots")
+      expect(input.anagrams?()).to(eq(true))
+    end
   end
 
   describe("#antigrams?") do
