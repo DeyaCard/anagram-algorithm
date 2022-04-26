@@ -33,6 +33,13 @@ class Anagram_algorithm
     end
     true
   end
+
+  def word?()
+    if !(@inputA =~ /['aeiouy']/) && !(@inputB =~ /['aeiouy']/)
+      return true
+    end
+    false
+  end
 end
 
 

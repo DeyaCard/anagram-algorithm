@@ -26,7 +26,12 @@ describe ("Anagram_algorithm") do
     end
   end
 
-
+  describe("#word?") do
+    it('should check if the inputted word has at least one vowel or a y') do
+      input = Anagram_algorithm.new("house", "try")
+      expect(input.word?()).to(eq(true))
+    end
+  end
 end
 
 

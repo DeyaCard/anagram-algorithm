@@ -23,6 +23,7 @@ https://github.com/DeyaCard/anagram-algorithm
 
 
 ### Known Bugs:
+* WIP
 * No known issues at time of publishing.
 
 
