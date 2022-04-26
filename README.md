@@ -1,29 +1,36 @@
 # Anagram Algorithm
 
+### By Deya Card
+
+##Description
 A Ruby testing environment for anagram algorithms.
 
-## By Deya Card
+
+###Link to GitHub Repository
+* https://github.com/DeyaCard/anagram-algorithm
 
 ### Technologies used:
 
 * Ruby
-* Gems
+* Gemfile
 * RSPEC
 * Pry
-* 
+* GitHub
+* VS Code
 
 
 ### Setup/Installation Requirements:
 
 * Clone or download this repository onto your desktop
 https://github.com/DeyaCard/anagram-algorithm
-* Navigate to top-level of directory
-*
+* Navigate to directory
+* Open in a source-code editor, such as VS Code
+* Run $bundle install in the terminal
+* Run file using $ruby ruby_script.rb
 
 
 
 ### Known Bugs:
-* WIP
 * No known issues at time of publishing.
 
 
