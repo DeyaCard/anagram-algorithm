@@ -1,15 +1,39 @@
 require('pry')
 
-#class Anagram_algorithm
-# class word_array  
-#   def (word_array) do |check_word|
-#     words = self.downcase
-#     check_word = check.word.downcase
-#     word_array = word.split(" ")
+class Anagram_algorithm
+  attr_reader(:inputA, :inputB)
 
-#     word_array.each do |word|
-#       return true if (word.chars.sort) == (check_word.chars.sort)
-#     end
-#   end
-# end
+  def initialize(inputA, inputB)
+    @inputs = [inputA, inputB]
+    @modified_inputs = [inputA.downcase, inputB.downcase]
+    @modified_inputs.each do |input|
+      input.each_char do |chr|
+        if !(chr =~ /[[:alpha:]]/)
+          @modified_inputs.delete(input)
+        input = input.delete(chr)
+          @modified_inputs.prepend(input)
+        end
+      end
+    end
+  end
+
+
+  def anagrams?()
+    if @modified_inputs[0].chars.sort.join == @modified_inputs[1].chars.sort.join
+      return true
+    end
+    false
+  end
+
+  def antigrams?()
+    @modified_inputs[0].each_char do |chr|
+      if @modified_inputs[1].include?(chr)
+        return false
+      end
+    end
+    true
+  end
+end
+
+
 
