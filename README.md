@@ -2,11 +2,11 @@
 
 ### By Deya Card
 
-##Description
+## Description
 A Ruby testing environment for anagram algorithms.
 
 
-###Link to GitHub Repository
+### Link to GitHub Repository
 * https://github.com/DeyaCard/anagram-algorithm
 
 ### Technologies used:
